@@ -6,9 +6,11 @@ class ListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = List
+        fields = ['id', 'name']
 
 
 class CardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Card
+        fields = ['title', 'description', 'story_points', 'business_value']
