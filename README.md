@@ -35,6 +35,11 @@ open db.sqlite3
 Run web server
 python manage.py runserver
 
+Download and install pyCharm on Raspberry Pi 4
+sudo tar -xzf pycharm-community-2020.2.3.tar.gz -C /opt
+cd /opt/pycharm-community-2020.2.3/bin
+sudo ./pycharm.sh
+sudo apt install default-jdk
 
 ## ToDo
 
