@@ -4,12 +4,14 @@
 		{% verbatim %}
 			<div ng-controller="ScrumboardController">
 				{{ person.name }} is {{ person.age }} years old.
-				<dif ng-repeat="list in data">
+				<div ng-repeat="list in data">
 					<h3>{{ list.name }}</h3>
 					<ul>
 						<li ng-repeat="card in list.cards">{{ card.title }}</li>
 					</ul>
-				</dif>
+					<input type="text" ng-model="new_title" /> {{ new_title }}
+					<button ng-click="add(list, new_title)">+</button>
+				</div>
 			</div>
 		{% endverbatim %}
 
@@ -25,6 +27,12 @@
 					$scope.person = {
 						name: 'Joe',
 						age: 35
+					};
+					$scope.add = function (list, title) {
+						var card = {
+							title: title
+						};
+						list.cards.push(card);
 					};
 					$scope.data = [
 						{
