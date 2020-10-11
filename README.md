@@ -30,7 +30,13 @@ python manage.py makemigrations
 python mangae.py migrate
 
 View DB
-open db.sqlite3 
+- sudo apt install sqlite3
+sqlite3 db.sqlite3
+sqlite> .tables
+- GUI tool
+sudo apt-get install sqlitebrowser
+- pyCharm plugin 'Database Navigator'
+menu DB Navigator / Database Browser / New Connection / SQLite
 
 Run web server
 python manage.py runserver
@@ -41,7 +47,4 @@ cd /opt/pycharm-community-2020.2.3/bin
 sudo ./pycharm.sh
 sudo apt install default-jdk
 
-## ToDo
-
-Fix open db.sqlite3
 
