@@ -44,9 +44,10 @@ python manage.py runserver
 Download and install pyCharm on Raspberry Pi 4
 sudo tar -xzf pycharm-community-2020.2.3.tar.gz -C /opt
 cd /opt/pycharm-community-2020.2.3/bin
-sudo ./pycharm.sh
+sudo ./pycharm.shCardDirective
 sudo apt install default-jdk
 
 Testing
 In case of 403 error (CSRF protection) 
 http://127.0.0.1:8000/admin and logout
+
