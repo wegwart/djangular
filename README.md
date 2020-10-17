@@ -47,4 +47,6 @@ cd /opt/pycharm-community-2020.2.3/bin
 sudo ./pycharm.sh
 sudo apt install default-jdk
 
-
+Testing
+In case of 403 error (CSRF protection) 
+http://127.0.0.1:8000/admin and logout
