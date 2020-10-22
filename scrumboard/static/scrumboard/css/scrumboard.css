@@ -57,3 +57,17 @@ ul {
 .flex button {
     flex-basis: auto;
 }
+
+/* edit card */
+
+.card button,
+.card input,
+.card textarea {
+    color: #2A9FBC;
+    margin: 2px 0px;
+}
+
+.card textarea {
+    width: 100%;
+    resize: vertical;
+}
