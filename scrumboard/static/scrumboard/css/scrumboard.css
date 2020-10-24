@@ -63,7 +63,7 @@ ul {
 .card button,
 .card input,
 .card textarea {
-    color: #2A9FBC;
+    color: rgb(0, 0, 0);
     margin: 2px 0px;
 }
 
