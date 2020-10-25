@@ -2,11 +2,14 @@ from django.contrib.auth import authenticate, login, logout
 
 from rest_framework import status, views
 from rest_framework.response import Response
+from django.views.decorators.csrf import csrf_protect
+from django.utils.decorators import method_decorator
 
 from .serializers import UserSerializer
 
 class LoginView(views.APIView):
 
+    @method_decorator(csrf_protect)
     def post(self, request):
         user = authenticate(username = request.data.get("username"),
                             password = request.data.get("password"))

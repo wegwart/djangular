@@ -20,7 +20,7 @@
 
         $scope.login = function() {
             $http.post('/auth_api/login/',
-            {username: 'robert', password: 'trebor'});
+            {username: 'robert', password: 'wegwart123'});
         };
 
         $scope.data = [];
