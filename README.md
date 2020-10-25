@@ -51,3 +51,6 @@ Testing
 In case of 403 error (CSRF protection) 
 http://127.0.0.1:8000/admin and logout
 
+Create app
+e.g. python manage.py startapp auth_api
+
