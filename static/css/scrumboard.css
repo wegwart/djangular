@@ -71,3 +71,9 @@ ul {
     width: 100%;
     resize: vertical;
 }
+
+/* error message */
+
+.error {
+    color: rgb(255,0,0);
+}
