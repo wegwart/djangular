@@ -77,3 +77,7 @@ ul {
 .error {
     color: rgb(255,0,0);
 }
+
+.logout {
+    float: right;
+}
