@@ -49,6 +49,7 @@ ul {
     display: flex;
 }
 
+
 .flex input {
     flex-grow: 2;
     min-width: 0; /* fix input field may be wider than list */
@@ -80,4 +81,8 @@ ul {
 
 .logout {
     float: right;
+}
+
+.list-sort {
+    min-width: 0;
 }

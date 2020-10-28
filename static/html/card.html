@@ -1,6 +1,7 @@
 <div class="card" ng-hide="edit" ng-click="edit=true">
     <h4>{{ card.title }}</h4>
-    <span class="description">{{ card.description }}</span>
+    <span class="description">{{ card.description }}</span><br>
+    <label>Points: {{ card.story_points }}, value: {{ card.business_value }}</label>
 </div>
 
 <div class="card" ng-show="edit"
