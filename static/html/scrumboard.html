@@ -3,18 +3,23 @@
 </div>
 <div class="list" ng-repeat="list in data">
     <h3>{{ list.name }}</h3>
-    <div class="list-sort">
+    <span class="show-filters">
+        <button ng-click="showFilters=!showFilters">
+            {{ showFilters ? "Hide" : "Show" }} filters
+        </button>
+    </span>
+    <div class="list-sort" ng-show="showFilters">
         <hr>
         <table>
             <tr>
                 <td><label>Sort:</label></td>
                 <td>
-                    <select ng-model="sortBy='story_points'">
+                    <select ng-model="sortBy">
                         <option value="title">Title</option>
                         <option value="story_points">Story Points</option>
                         <option value="business_value">Business Value</option>
                     </select>
-                    <input type="checkbox" ng-model="reverse" ng-checked="true">
+                    <input type="checkbox" ng-model="reverse">
                     <label>Reverse</label>
                 </td>
             </tr>

@@ -4,6 +4,7 @@
         .controller('ScrumboardController', [ '$scope', '$http', '$location', ScrumboardController ]);
 
     function ScrumboardController($scope, $http) {
+
         $scope.add = function (list, title) {
             var card = {
                 list: list.id,
@@ -29,5 +30,9 @@
         $http.get('/scrumboard/lists/').then(function(response){
             $scope.data = response.data;
         });
+
+        $scope.sortBy='story_points';
+        $scope.reverse=true;
+        $scope.showFilters=false;
     }
 }());

@@ -15,6 +15,7 @@ html {
 }
 
 .list h3 {
+    display: inline;
     padding-left: 7px;
     color: white;
 }
@@ -52,7 +53,7 @@ ul {
 
 .flex input {
     flex-grow: 2;
-    min-width: 0; /* fix input field may be wider than list */
+    width: 100%;
 }
 
 .flex button {
@@ -79,10 +80,13 @@ ul {
     color: rgb(255,0,0);
 }
 
-.logout {
+.logout,
+.show-filters {
     float: right;
 }
 
 .list-sort {
-    min-width: 0;
+    color: white;
+    margin-left: 7px;
 }
+
