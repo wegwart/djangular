@@ -17,10 +17,13 @@ from django.contrib import admin
 from django.conf.urls import url, include
 from django.views.generic import TemplateView
 from django.views.decorators.csrf import ensure_csrf_cookie
+from django.views.generic import RedirectView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', ensure_csrf_cookie(TemplateView.as_view(template_name="home.html"))),
     url(r'^scrumboard/', include('scrumboard.urls')),
     url(r'^auth_api/', include('auth_api.urls')),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/images/favicon.ico')),
+
 ]
