@@ -17,4 +17,10 @@
             placeholder="Enter description.."></textarea>
     <button ng-click="edit=false">Close</button>
     <button ng-click="delete()">Delete Card</button>
+    <div>
+        <label>List: </label>
+        <select ng-options="list as list.name for list in data"
+                ng-model="destList"></select>
+        <button ng-click="move()">Move</button>
+    </div>
 </div>
